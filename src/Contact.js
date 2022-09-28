@@ -11,10 +11,10 @@ export const Contact = (props) => {
           <p className="font-light">Send me an email at</p>
           <a
             href="mailto:contact@wiskcreative.com"
-            className="py-5 text-2xl font-semibold sm:text-5xl hover:drop-shadow hover:text-sky-900"
+            className="py-5 text-xl font-semibold sm:text-5xl hover:drop-shadow hover:text-sky-900"
           >
             <div className="flex">
-              <CursorArrowRaysIcon className="relative w-16 top-[-2rem]" />
+              <CursorArrowRaysIcon className="sm:block hidden relative w-16 top-[-2rem]" />
               <span>contact@wiskcreative.com</span>
             </div>
           </a>
