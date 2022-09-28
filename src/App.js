@@ -8,11 +8,12 @@ import { Contact } from "./Contact";
 
 function App() {
   const contactRef = useRef(null);
-  const scrollToElement = () => contactRef.current.scrollIntoView();
+  const scrollToElement = () =>
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
   return (
     <div className="App">
       <NavBar />
-      <Header contactBtn={scrollToElement} />
+      <Header event={scrollToElement} />
       <Services />
       <Filler />
       <Contact refs={contactRef} />
