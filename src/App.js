@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import { Filler } from "./components/Filler";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { NavBar } from "./components/NavBar";
+import { Services } from "./components/Services";
+import { Contact } from "./Contact";
 
 function App() {
+  const contactRef = useRef(null);
+  const scrollToElement = () => contactRef.current.scrollIntoView();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Header contactBtn={scrollToElement} />
+      <Services />
+      <Filler />
+      <Contact refs={contactRef} />
+      <Footer />
     </div>
   );
 }
