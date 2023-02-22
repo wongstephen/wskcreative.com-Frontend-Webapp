@@ -15,7 +15,7 @@ export const Contact = (props) => {
           >
             <div className="flex">
               <CursorArrowRaysIcon className="sm:block hidden relative w-16 top-[-2rem]" />
-              <span>contact@wiskcreative.com</span>
+              <span>contact@wskcreative.com</span>
             </div>
           </a>
           {/* <p className="my-5 mt-10">or write me a message below</p> */}
